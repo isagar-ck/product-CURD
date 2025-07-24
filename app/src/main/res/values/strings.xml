@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create new account</string>
+    <string name="signup">Sign Up</string>
+    <string name="enter_valid_email">Please enter valid email</string>
+    <string name="login_error">You have enter invalid email and password.</string>
+    <string name="password_not_match">Your password and confirm password dose not match.</string>
+    <string name="add_product">Add Product</string>
+    <string name="enter_product_name">Enter Product Name</string>
+    <string name="enter_product_description">Enter Product Description</string>
+    <string name="enter_product_categories">Enter Product Categories</string>
+    <string name="enter_product_quantity">Enter Product Quantity</string>
+    <string name="enter_product_price">Enter Product Price</string>
+    <string name="save">Save</string>
+    <string name="no_data_found">No data found</string>
+</resources>
