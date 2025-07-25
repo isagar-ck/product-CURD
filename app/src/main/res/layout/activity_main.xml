@@ -25,42 +25,27 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/email_TIL"
+            <EditText
+                android:id="@+id/email_editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:hint="@string/enter_email"
-                app:endIconMode="clear_text"
+                android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/title_text">
+                app:layout_constraintTop_toBottomOf="@id/title_text" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/email_editText"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:inputType="textEmailAddress" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/password_TIL"
+            <EditText
+                android:id="@+id/password_editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:hint="@string/enter_password"
-                app:endIconMode="password_toggle"
+                android:inputType="textPassword"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/email_TIL">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/password_editText"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:inputType="textPassword" />
-            </com.google.android.material.textfield.TextInputLayout>
-
+                app:layout_constraintTop_toBottomOf="@id/email_editText" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/loginButton"
@@ -68,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="@string/login"
-                app:layout_constraintTop_toBottomOf="@id/password_TIL" />
+                app:layout_constraintTop_toBottomOf="@id/password_editText" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/signup_text"
