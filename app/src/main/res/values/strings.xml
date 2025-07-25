@@ -19,4 +19,14 @@
     <string name="enter_product_price">Enter Product Price</string>
     <string name="save">Save</string>
     <string name="no_data_found">No data found</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="user_dashboard">User Dashboard</string>
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="enter_debit_credit_card_number">Enter Debit/Credit card number</string>
+    <string name="enter_card_expiry_month">Enter Card Expiry Month</string>
+    <string name="enter_card_expiry_year">Enter Card Expiry Year</string>
+    <string name="cvv">Enter cvv</string>
+    <string name="enter_card_holder_name">Enter Card Holder Name</string>
 </resources>

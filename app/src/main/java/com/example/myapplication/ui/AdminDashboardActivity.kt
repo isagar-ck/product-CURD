@@ -10,8 +10,8 @@ import com.example.myapplication.adapter.ProductAdapter
 import com.example.myapplication.databinding.ActivityAdminDashboardBinding
 import com.example.myapplication.db.DatabaseHelper
 import com.example.myapplication.model.ProductModel
-import com.example.myapplication.util.IS_EDIT_PRODUCT
-import com.example.myapplication.util.PRODUCT_ID
+import com.example.myapplication.util.Constants.Companion.IS_EDIT_PRODUCT
+import com.example.myapplication.util.Constants.Companion.PRODUCT_ID
 import com.example.myapplication.util.SharedPref
 import com.example.myapplication.util.adjustFullScreen
 import com.example.myapplication.util.showToast
@@ -58,6 +58,12 @@ class AdminDashboardActivity : AppCompatActivity(), ProductAdapter.ProductAction
         with(binding) {
             addProductButton.setOnClickListener {
                 startActivity(Intent(this@AdminDashboardActivity, AddProductActivity::class.java))
+            }
+
+            logout.setOnClickListener {
+                SharedPref(this@AdminDashboardActivity).clearPreferences()
+                startActivity(Intent(this@AdminDashboardActivity, SignInActivity::class.java))
+                finishAffinity()
             }
         }
     }

@@ -44,6 +44,7 @@ class SignInActivity : AppCompatActivity() {
                     Log.e("TAG", "manageLogin: LOGIN")
                     this@SignInActivity.showToast("Login Successfully")
                     SharedPref(this@SignInActivity).userID = checkUser.userId
+                    SharedPref(this@SignInActivity).isLogin = true
 
                     if (checkUser.userType.lowercase() == "admin") {
                         val intent = Intent(this@SignInActivity, AdminDashboardActivity::class.java)

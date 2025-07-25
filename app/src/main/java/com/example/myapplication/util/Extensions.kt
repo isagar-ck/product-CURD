@@ -11,14 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-
-
-var USERDATA = "userData"
-
-var USERID = "userId"
-var PRODUCT_ID = "productId"
-var IS_EDIT_PRODUCT = "isEditProduct"
-
 /**
  * This Extension has been using for set padding for safe area
  */

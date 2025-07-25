@@ -6,5 +6,6 @@ data class ProductModel(
     val name: String,
     val description: String,
     val quantity: Int,
-    val price: Double
+    val price: Double,
+    var addToCart: Int = 0
 )

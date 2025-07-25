@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.PaymentActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/make_payment"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/cardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/enter_debit_credit_card_number"
+                android:inputType="number"
+                android:maxLength="12"
+                app:layout_constraintTop_toBottomOf="@id/title_text" />
+
+            <EditText
+                android:id="@+id/monthET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/enter_card_expiry_month"
+                android:inputType="number"
+                android:maxLength="2"
+                app:layout_constraintTop_toBottomOf="@id/cardNumber" />
+
+            <EditText
+                android:id="@+id/yearET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/enter_card_expiry_year"
+                android:inputType="number"
+                android:maxLength="4"
+                app:layout_constraintTop_toBottomOf="@id/monthET" />
+
+            <EditText
+                android:id="@+id/cvvET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/cvv"
+                android:inputType="number"
+                android:maxLength="3"
+                app:layout_constraintTop_toBottomOf="@id/yearET" />
+
+            <EditText
+                android:id="@+id/nameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/enter_card_holder_name"
+                android:inputType="text"
+                app:layout_constraintTop_toBottomOf="@id/cvvET" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/save"
+                app:layout_constraintTop_toBottomOf="@id/nameET" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

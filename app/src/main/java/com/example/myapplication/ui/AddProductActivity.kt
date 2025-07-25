@@ -8,8 +8,8 @@ import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityAddProductBinding
 import com.example.myapplication.db.DatabaseHelper
 import com.example.myapplication.model.ProductModel
-import com.example.myapplication.util.IS_EDIT_PRODUCT
-import com.example.myapplication.util.PRODUCT_ID
+import com.example.myapplication.util.Constants.Companion.IS_EDIT_PRODUCT
+import com.example.myapplication.util.Constants.Companion.PRODUCT_ID
 import com.example.myapplication.util.SharedPref
 import com.example.myapplication.util.adjustFullScreen
 import com.example.myapplication.util.checkEmptyString
